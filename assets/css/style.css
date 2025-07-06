@@ -551,6 +551,123 @@ footer .copyright {
 #prodetails .single-pro-deetz span {
     line-height: 5px;
 }
+
+/* Review Page */
+
+#page__header.review-header {
+    background-image: url("../images/banner/b19.jpg");
+}
+
+
+#review {
+    padding: 150px 150px 0 150px;
+}
+
+#review .review-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#review .review-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#review img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#review .review-details {
+    width: 50%;
+}
+#review .review-details a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#review .review-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 40px;
+    right: -60px;
+}
+
+#review .review-details a:hover::after {
+    color: #088178;
+}
+
+#reivew .review-details a:hover {
+    color: #088178;
+}
+
+#review .review-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+#review .review__title{
+    color: #6b6565;
+}
+
+#review .review__msg {
+    color: #aeb1ae
+}
+
+/* About Page */
+
+#page__header.about-header {
+    background-image: url(../images/about/banner.png);
+ }
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+        padding-left: 40px;
+}
+
+#about-us {
+    text-align: center;
+}
+
+#about-us .maps-us{
+    width: 70%;
+    margin: 30px auto 0 auto;
+    
+}
+
+#about-us .maps-us iframe{
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    border: #041e42;
+    box-shadow: 0 0px 20px 10px #222;
+}
+
+
 /* Start Media Query */
 
     .section-p1 {
@@ -700,4 +817,44 @@ footer .copyright {
     #footer .copyright {
         text-align: start;
     }
+ /* review page */
+    #review {
+        padding: 100px 20px 0 20px;
+    }
+
+    #review .review-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #review .review-img {
+        width: 50%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #review .review-details {
+        width: 100%;
+    }
+
+    /*about page */
+
+    #about-head {
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0;
+    }
+
+    #about-us .maps-us {
+        width: 100%;
+    }
 }
+
