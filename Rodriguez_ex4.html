@@ -11,17 +11,17 @@
 </head>
 <body>
 
-<!--=========== HEADER ==========-->
+    <!--=========== HEADER ==========-->
 
     <section class="header">
         <a href="Rodriguez_ex4.html"><img src="./assets/images/logos.png" class="logo" alt="" width="125" height="27"></a>
 
         <div>
             <ul id="navbar">
-                <li><a href="Rodriguez_ex4.html">Home</a></li>
-                <li><a class="active" href="gallery.html">Shop</a></li>
+                <li><a class="active" href="Rodriguez_ex4.html">Home</a></li>
+                <li><a href="gallery.html">Shop</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="Contact">Contact us!</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
@@ -33,19 +33,58 @@
         </div>
     </section>
 
-    <!--========= SHOP BANNER =================-->
-    <section id="page__header">
-        <h2>#STAYHOME</h2>
+    <!--============ BG VIDEO HOMEPAGE ===========-->
+
+    <section id="hero">
+        <video id="myVideo" class="vroll" autoplay loop>
+            <source src="./assets/vid/Kuyakol.mp4"  type="video/mp4">
+        </video>
+        <h4>New Arrivals</h4>
+        <h2>Latest Designs!</h2>
+        <h1>On all products</h1>
         <p>Save more with coupons & up to 70% off!</p>
+        <a href="gallery.html"><button>Shop Now</button></a>
     </section>
 
-    <!--============ PRODUCTS SECTION ==============-->
+    <!--============ FEATURES SECTION ===========-->
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="./assets/images/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./assets/images/features/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./assets/images/features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./assets/images/features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./assets/images/features/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./assets/images/features/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <!--============= FEATURED PRODUCT SECTION ========-->
+
     <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Car Enthusiast Collection</p>
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/FK8White.html';">
+            <div class="pro">
                 <img src="./assets/images/featured1.png" alt="">
                 <div class="des">
-                    <span>FK8 COLLECTIONS</span>
+                    <span>FK8</span>
                     <h5>Honda Civic FK8 (Limited Edition)</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -58,12 +97,11 @@
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/Bigote.html';">
+            <div class="pro">
                 <img src="./assets/images/featured2.png" alt="">
                 <div class="des">
-                    <span>BIGOTE (EK) COLLECTIONS</span>
-                    <h5>Honda Civic VTI (Limited Edition) <br>
-                        BLUE & BLACK </h5>
+                    <span>BIGOTE (EK) </span>
+                    <h5>Honda Civic VTI (Limited Edition)</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -75,44 +113,11 @@
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/Demon.html';">
-                <img src="./assets/images/new3.png" alt="">
+            <div class="pro">
+                <img src="./assets/images/featured3.png" alt="">
                 <div class="des">
-                    <span>ANIME COLLECTIONS</span>
-                    <h5>DEMON SLAYER TANJIRO KIMETSU NO YAIBA<br>
-                        & PEEPING ANIME (LIMITED EDITION)</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>₱ 300</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/Strong.html';">
-                <img src="./assets/images/new4.png" alt="">
-                <div class="des">
-                    <span>STRONG</span>
-                    <h5>Stronger than Yesterday</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>₱ 300</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/EGHatch.html';">
-                <img src="./assets/images/product4.png" alt="">
-                <div class="des">
-                    <span>NUFORM EG HATCH</span>
-                    <h5>Honda Civic EG (Limited Edition)</h5>
+                    <span>PEEPING ANIME</span>
+                    <h5>KUROO, JOSUKE, KOMI, SANJI, GYRO</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -128,15 +133,89 @@
 
     </section>
 
-    <!--================== PAGE SELECTOR ================
+    <!--============= ADS BANNER ==============-->
 
-    <section id="pagenation" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-    </section> -->
+    <section id="banner" class="section-m1">
+        <h4>Printing Services</h4>
+        <h2>Caption<span>Red</span>Caption</h2>
+        <button class="normal">Visit Page</button>
+    </section>
 
-    <!--================= NEWSLETTER SECTION ==========-->
+    <!--============= NEW ARRIVAL SECTION =============-->
+
+    <section id="product1" class="section-p1">
+        <h2>NEW ARRIVALS</h2>
+        <p>work in progress</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="./assets/images/new1.png" alt="">
+                <div class="des">
+                    <span>FK8</span>
+                    <h5>Honda Civic FK8 (Limited Edition)</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱ 350</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="./assets/images/new2.png" alt="">
+                <div class="des">
+                    <span>BIGOTE (EK) </span>
+                    <h5>Honda Civic VTI (Limited Edition)</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱ 300</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="./assets/images/new3.png" alt="">
+                <div class="des">
+                    <span>PEEPING ANIME</span>
+                    <h5>KUROO, JOSUKE, KOMI, SANJI, GYRO</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱ 300</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="./assets/images/new4.png" alt="">
+                <div class="des">
+                    <span>PEEPING ANIME</span>
+                    <h5>KUROO, JOSUKE, KOMI, SANJI, GYRO</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱ 300</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--============= NEWSLETTER SECTION ============-->
 
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
@@ -150,7 +229,7 @@
         </div>
     </section>
 
-    <!--============== FOOTER SECTION =============-->
+    <!--============ FOOTER SECTION =================-->
 
     <footer class="section-p1">
         <div class="col">
@@ -192,7 +271,7 @@
         </div>
     </footer>
 
-    <!--============ MAIN SCRIPT.JS ==============-->
+    <!--============= MAIN SCRIPT JS ================-->
 
     <script src="script.js"></script>
 </body>

@@ -20,10 +20,10 @@
             <ul id="navbar">
                 <li><a href="Rodriguez_ex4.html">Home</a></li>
                 <li><a href="gallery.html">Shop</a></li>
-                <li><a class="active" href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact us!</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a  href="Contact">Contact us!</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -35,45 +35,68 @@
 
 <!--========= PAGE HEADER ======-->
     <section id="page__header" class="about-header">
-        <h2>#GetKnowKroven.Co</h2>
-        <p>In a world where trends fade and authenticity reigns, Kroven stands as a symbol of strength, <br> rebellion, and individuality.</p>
+        <h2>#ContactUs</h2>
+        <p>You can contact us through email, chat, or our socials. We’ll get back to you as soon 
+            as we can!</p>
+    </section>
+<!--============ CART SECTION ==========-->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="./assets/images/featured1.png" alt=""></td>
+                    <td>NAME</td>                    
+                    <td>price</td>
+                    <td><input type="number" value="1"></td>
+                    <td>total</td>
+
+                    
+
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <!--======== ABOUT HEADER =========-->
+<!--=========== COUPON SECTION =========-->
 
-    <section id="about-head" class="section-p1">
-        <img src="./assets/images/about/a6.jpg" alt="">
+<section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
         <div>
-            <h2>WHO WE ARE?</h2>
-            <p>Kroven is a bold and innovative streetwear brand that aims to empower Gen Z with fashion that embodies individuality, creativity, and authenticity. 
-            The brand will offer high-quality, stylish T-shirts, hoodies, and accessories that blend urban aesthetics with futuristic designs. Kroven will establish 
-            itself through online sales, social media engagement, and limited-edition drops to create hype and exclusivity.<br> <br>Kroven addresses the gap in the 
-            market for streetwear that authentically resonates with the Gen Z ethos — blending sustainability, style, and self-expression. By utilizing eco-friendly 
-            materials, leveraging digital marketing strategies, and collaborating with local artists, Kroven will create a brand that stands out in the highly 
-            competitive fashion landscape.</p>
+            <input type="text" placeholder="Enter your Coupon">
+            <button class="normal">Apply</button>
         </div>
-    </section>
-<!--========== ABOUT US SECTION =======-->
-    <section id="about-us" class="section-p1">
-        <h1>Where are we Located?</h1>
-        <div class="about-loc">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.0750582588166!2d121.01891904920313!3d14.484772422415388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cef740205c5d%3A0x327a377cec6ea5fc!2sJordan%20Carwash!5e0!3m2!1sen!2sph!4v1751824775341!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps-us"></iframe>
-        </div>
-    </section>
-
-    <!--============= NEWSLETTER SECTION ============-->
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign up for Newsletter</h4>
-            <p>Get E-mail updates about our latest shop and <span> Special Offers.</span>
-            </p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="E-mail Address">
-            <button class="normal">Sign Up</button>
-        </div>
-    </section>
+    </div>
+    <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>₱</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><Strong>₱</Strong></td>
+            </tr>
+        </table>
+        <button class="normal">proceed to check out</button>
+    </div>
+</section>
 
     <!--============ FOOTER SECTION =================-->
 
@@ -99,7 +122,7 @@
             <a href="#">About Us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
-            <a href="#">contact.html.html Us</a>
+            <a href="#">Contact Us</a>
         </div>
         <div class="col">
             <h4>My Account</h4>
