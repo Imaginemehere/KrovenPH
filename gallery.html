@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script src="store.js" async></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="Contact">Contact us!</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="lg-bag"><a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -38,14 +39,15 @@
         <h2>#STAYHOME</h2>
         <p>Save more with coupons & up to 70% off!</p>
     </section>
-
+<i class="fa-regular fa-cart-shopping"></i>
     <!--============ PRODUCTS SECTION ==============-->
     <section id="product1" class="section-p1">
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/FK8White.html';">
-                <img src="./assets/images/featured1.png" alt="">
+            <div class="pro">
+                <div class="shop-items">
+                <img class="shop-item-img" src="./assets/images/featured1.png" alt="">
                 <div class="des">
-                    <span>FK8 COLLECTIONS</span>
+                    <span class="shop-name">FK8 WHITE</span>
                     <h5>Honda Civic FK8 (Limited Edition)</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -54,16 +56,18 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>₱ 350</h4>
+                    <h4 class="shop-item-price">₱ 350</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+                <button class="fa-solid fa-cart-plus shop-item-button"></button>
             </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/Bigote.html';">
-                <img src="./assets/images/featured2.png" alt="">
+            </div>
+
+           <div class="pro">
+                <div class="shop-items">
+                <img class="shop-item-img" src="./assets/images/featured3.png" alt="">
                 <div class="des">
-                    <span>BIGOTE (EK) COLLECTIONS</span>
-                    <h5>Honda Civic VTI (Limited Edition) <br>
-                        BLUE & BLACK </h5>
+                    <span class="shop-name">Peeping Anime</span>
+                    <h5>KUROO, JOSUKE, KOMI, SANJI, GYRO</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -71,16 +75,18 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>₱ 300</h4>
+                    <h4 class="shop-item-price">₱ 350</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+                <button class="fa-solid fa-cart-plus shop-item-button"></button>
+            </div>        
             </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/Demon.html';">
-                <img src="./assets/images/new3.png" alt="">
+
+            <div class="pro">
+                <div class="shop-items">
+                <img class="shop-item-img" src="./assets/images/new3.png" alt="">
                 <div class="des">
-                    <span>ANIME COLLECTIONS</span>
-                    <h5>DEMON SLAYER TANJIRO KIMETSU NO YAIBA<br>
-                        & PEEPING ANIME (LIMITED EDITION)</h5>
+                    <span class="shop-name">TANJIRO (KIMETSU NO YAIBA)</span>
+                    <h5>DEMON SLAYER (TANJIRO)</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -88,14 +94,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>₱ 300</h4>
+                    <h4 class="shop-item-price">₱ 300</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+                <button class="fa-solid fa-cart-plus shop-item-button"></button>
+             </div>
             </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/Strong.html';">
-                <img src="./assets/images/new4.png" alt="">
+
+            <div class="pro">
+                <div class="shop-items">
+                <img class="shop-item-img" src="./assets/images/new4.png" alt="">
                 <div class="des">
-                    <span>STRONG</span>
+                    <span class="shop-name">STRONG</span>
                     <h5>Stronger than Yesterday</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -104,14 +113,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>₱ 300</h4>
+                    <h4 class="shop-item-price">₱ 300</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+                <button class="fa-solid fa-cart-plus shop-item-button"></button>
             </div>
-            <div class="pro" onclick="window.location.href='./SingleProduct HTML/EGHatch.html';">
-                <img src="./assets/images/product4.png" alt="">
+            </div>
+
+            <div class="pro">
+                <div class="shop-items">
+                <img class="shop-item-img" src="./assets/images/product4.png" alt="">
                 <div class="des">
-                    <span>NUFORM EG HATCH</span>
+                    <span class="shop-name">NUFORM EG HATCH</span>
                     <h5>Honda Civic EG (Limited Edition)</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -120,13 +132,103 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>₱ 300</h4>
+                    <h4 class="shop-item-price">₱ 300</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+                <button class="fa-solid fa-cart-plus shop-item-button"></button>
+             </div>
             </div>
-        </div>
 
+            <div class="pro">
+                <div class="shop-items">
+                <img class="shop-item-img" src="./assets/images/product5.png" alt="">
+                <div class="des">
+                    <span class="shop-name">BIGOTE (EK) DREAM BIG</span>
+                    <h5>Honda Civic VTI (Limited Edition)</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="shop-item-price">₱ 300</h4>
+                </div>
+                <button class="fa-solid fa-cart-plus shop-item-button"></button>
+             </div>
+            </div>
+
+            <div class="pro">
+                <div class="shop-items">
+                <img class="shop-item-img" src="./assets/images/product2.png" alt="">
+                <div class="des">
+                    <span class="shop-name">BIGOTE (EK) BLUE BIGOTE</span>
+                    <h5>Honda Civic VTI (Limited Edition)</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="shop-item-price">₱ 300</h4>
+                </div>
+                <button class="fa-solid fa-cart-plus shop-item-button"></button>
+             </div>
+            </div>
     </section>
+
+    <!--============CART ===============-->
+    <section id="page__header">
+        <h2>CART</h2>
+    </section>
+
+    <!--========= CART SECTION ===========-->
+     <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product Code</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                </tr>
+            </thead>
+          <tbody class="cart-items">
+        <!--            <tr class="cart-row">
+                            <td><button class="button-danger"><i class="fa-solid fa-trash"></i></button></td>
+                            <td><img class="cart-item-img" src="./assets/images/featured1.png" alt=""></td>
+                            <td class="cart-item-title">NAME</td>                                                    
+                            <td class="cart-price">₱ 350</td>
+                            <td><input class="cart-quantity-input" type="number" value="1"></td>
+                    </tr>-->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter your Coupon">
+            <button class="normal">Apply</button>
+        </div>
+    </div>
+    <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+            <tr>
+                <td>Shipping</td>
+                <td>Free Shipping</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td class="cart-total-price"><Strong>₱</Strong></td>
+            </tr>
+        </table>
+        <button class="normal purchase-btn" type="button">check out</button>
+    </div>
+</section>
 
     <!--================== PAGE SELECTOR ================
 
