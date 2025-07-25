@@ -1,116 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Kroven Co. | Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <title>Baker - Bakery Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
 
-<!--=========== HEADER ==========-->
 
-    <section class="header">
-        <a href="Rodriguez_ex4.html"><img src="./assets/images/logos.png" class="logo" alt="" width="125" height="27"></a>
-
-        <div>
-            <ul id="navbar">
-                <li><a href="Rodriguez_ex4.html">Home</a></li>
-                <li><a href="gallery.html">Shop</a></li>
-                <li><a class="active" href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact us!</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <i id="bar" class="fa-solid fa-bars"></i>
-        </div>
-    </section>
-
-<!--========= PAGE HEADER ======-->
-    <section id="page__header" class="about-header">
-        <h2>#GetKnowKroven.Co</h2>
-        <p>In a world where trends fade and authenticity reigns, Kroven stands as a symbol of strength, <br> rebellion, and individuality.</p>
-    </section>
-
-    <!--======== ABOUT HEADER =========-->
-
-    <section id="about-head" class="section-p1">
-        <img src="./assets/images/about/a6.jpg" alt="">
-        <div>
-            <h2>WHO WE ARE?</h2>
-            <p>Kroven is a bold and innovative streetwear brand that aims to empower Gen Z with fashion that embodies individuality, creativity, and authenticity. 
-            The brand will offer high-quality, stylish T-shirts, hoodies, and accessories that blend urban aesthetics with futuristic designs. Kroven will establish 
-            itself through online sales, social media engagement, and limited-edition drops to create hype and exclusivity.<br> <br>Kroven addresses the gap in the 
-            market for streetwear that authentically resonates with the Gen Z ethos — blending sustainability, style, and self-expression. By utilizing eco-friendly 
-            materials, leveraging digital marketing strategies, and collaborating with local artists, Kroven will create a brand that stands out in the highly 
-            competitive fashion landscape.</p>
-        </div>
-    </section>
-<!--========== ABOUT US SECTION =======-->
-    <section id="about-us" class="section-p1">
-        <h1>Where are we Located?</h1>
-        <div class="about-loc">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.0750582588166!2d121.01891904920313!3d14.484772422415388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cef740205c5d%3A0x327a377cec6ea5fc!2sJordan%20Carwash!5e0!3m2!1sen!2sph!4v1751824775341!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps-us"></iframe>
-        </div>
-    </section>
-
-    <!--============= NEWSLETTER SECTION ============-->
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign up for Newsletter</h4>
-            <p>Get E-mail updates about our latest shop and <span> Special Offers.</span>
-            </p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="E-mail Address">
-            <button class="normal">Sign Up</button>
-        </div>
-    </section>
-
-    <!--============ FOOTER SECTION =================-->
-
-    <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="./assets/images/favicon.png" alt="" width="240" height="55">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong> 1191 Pablo Ocampo Sr. Ext.,<br>Makati City, Metro Manila</p>
-            <p><strong>Phone:</strong> 0992 448 6530</p>
-            <div class="follow">
-                <h4>Follow us</h4>
-                <div class="icon">
-                    <i class="fa-brands fa-facebook" window.location.href="facebook.com/engrjuanmala"></i>
-                    <i class="fa-brands fa-tiktok" window.location.href="tiktok.com/juanmalalim"></i>
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-lg-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <h4>About</h4>
-            <a href="./about.html">About Us</a>
-            <a href="./contact.html">Contact Us</a>
-        </div>
-        <div class="col">
-            <h4>My Cart</h4>
-            <a href="cart.html">View Cart</a>
-        </div>
-        <div class="col install">
-            <h4>Secured Payment Gateways</h4>
-            <img src="./assets/images/pay/pay.png"alt="">
-        </div>
+    </div>
+    <!-- Topbar End -->
 
-        <div class="copyright">
-            <p>© 2025, Rodriguez</p>
-        </div>
-    </footer>
 
-<!--========== MAIN SCRIPT JS =======-->
-    <script src="script.js"></script>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0">Douilette</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="product.html" class="nav-item nav-link">Products</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class=" d-none d-lg-flex">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-phone text-primary"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Call Us</small>
+                    <p class="text-light fs-5 mb-0">0966 185 5858</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 text-white animated slideInDown mb-3">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="img/Blueberry Muffin.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="img/Chocolate Cookie.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <p class="text-primary text-uppercase mb-2">// About Us</p>
+                        <h1 class="display-6 mb-4">Handcrafted. Homey. Douilette.</h1>
+                        <p>Douilette started back in the pandemic, born from my desire to explore my 
+						talent in baking and to pass the time while stuck at home. I wanted to create 
+						something that felt like a warm hug, combining my love for cozy, eclectic, 
+						and homey aesthetics with treats that bring comfort.</p>
+                        <p>It’s more than just a small business; it’s a reflection of my personality 
+						and the simple joys I cherish: slow mornings, quiet afternoons, and 
+						meaningful little moments shared over good pastries. Every pastry is thoughtfully 
+						crafted, aiming to give that sense of home, no matter where you are.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- About End -->
+
+
+		<!-- Footer Start -->
+		<div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+			<div class="container py-5">
+				<div class="row g-5">
+					<div class="col-lg-3 col-md-6">
+						<h4 class="text-light mb-4">Contact Details</h4>
+						<p class="mb-2"><i class="fa fa-user me-3"></i>Anna Nicole</p>
+						<p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0966 185 5858</p>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<h4 class="text-light mb-4">Quick Links</h4>
+						<a class="btn btn-link" href="home.html">Home</a>
+						<a class="btn btn-link" href="about.html">About</a>
+						<a class="btn btn-link" href="products.html">Products</a>
+						<a class="btn btn-link" href="testimonial.html">Testimonials</a>
+						<a class="btn btn-link" href="contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer End -->
+
+
+
+	<!-- Copyright Start -->
+	<div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center">
+					&copy; <a href="#">Douilette</a>, All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,215 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Kroven Co. | Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <title>Douilette - Products</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<!--========== HEADER ================-->
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
 
-    <section class="header">
-        <a href="#"><img src="./assets/images/favicon.png" class="logo" alt="" width="125" height="27"></a>
-
-        <div>
-            <ul id="navbar">
-                <li><a href="Rodriguez_ex4.html">HOME</a></li>
-                <li><a class="active" href="gallery.html">Shop</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="Contact">Contact us!</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <i id="bar" class="fa-solid fa-bars"></i>
-        </div>
-    </section>
-<!--========== PRODUCT SECTION ===========-->
-
-    <section id="prodetails" class="section-p1">
-        <div class="single-pro-img">
-            <img src="./assets/images/new1.png" width="100%" id="mainImg" alt="">
-
-            <div class="small-img-grp">
-                <div class="small-img-col">
-                    <img src="./assets/images/new4.png" width="100%" class="smallImg" alt="">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="home.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0">Douilette</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="home.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="products.html" class="nav-item nav-link active">Products</a>
+                <a href="testimonial.html" class="nav-item nav-link" >Testimonials</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class=" d-none d-lg-flex">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-phone text-primary"></i>
                 </div>
-                <div class="small-img-col">
-                    <img src="./assets/images/new1.png" width="100%" class="smallImg" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="./assets/images/new2.png" width="100%" class="smallImg" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="./assets/images/new3.png" width="100%" class="smallImg" alt="">
-                </div>
-                
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Call Us</small>
+                    <p class="text-light fs-5 mb-0">0966 185 5858</p>
                 </div>
             </div>
-            <div class="single-pro-deetz">
-                <h6>Home / T-Shirt</h6>
-                <h4>Uni-Sex Fashion T-Shirt</h4>
-                <h2>₱350</h2>
-                <select>
-                    <option>Select Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>Large</option>
-                    <option>Medium</option>
-                    <option>Small</option>
-                </select>
-                <input type="number" value="1">
-                <button class="normal">Add to Cart</button>
-                <h4>Product Details</h4>
-                <span>The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per
-                    sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey
-                    knit provides unmatched comfort with each wear. Featuring a taped neck and
-                    shoulder, and a seamless double-needle collar, and available in a range of
-                    of colors, it offers it all in the ultimate head-turning package.</span>
-            </div>
         </div>
-    </section>
-<!--========== FEATURED SECTION ==========-->
+    </nav>
+    <!-- Navbar End -->
 
-        <section id="product1" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Car Enthusiast Collection</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="./assets/images/featured1.png" alt="">
-                <div class="des">
-                    <span>FK8</span>
-                    <h5>Honda Civic FK8 (Limited Edition)</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 text-white animated slideInDown mb-3">Products</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Product Start -->
+    <div class="container-fluid bg-light my-6 py-6 pb-0" style="margin: 12rem 0;">
+        <div class="container">
+            <div class="bg-primary text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 text-light mb-0">The Best Bakery In Your City</h1>
                     </div>
-                    <h4>₱ 350</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="./assets/images/featured2.png" alt="">
-                <div class="des">
-                    <span>BIGOTE (EK) </span>
-                    <h5>Honda Civic VTI (Limited Edition)</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="col-lg-6 text-lg-end">
+                        <div class="d-inline-flex align-items-center text-start">
+                            <i class="fa fa-phone-alt fa-4x flex-shrink-0"></i>
+                            <div class="ms-4">
+                                <p class="fs-5 fw-bold mb-0">Call Us</p>
+                                <p class="fs-1 fw-bold mb-0">+63 966 185 5858</p>
+                            </div>
+                        </div>
                     </div>
-                    <h4>₱ 300</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
             </div>
-            <div class="pro">
-                <img src="./assets/images/featured3.png" alt="">
-                <div class="des">
-                    <span>PEEPING ANIME</span>
-                    <h5>KUROO, JOSUKE, KOMI, SANJI, GYRO</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Our Products</p>
+                <h1 class="display-6 mb-4">Explore The Categories Of Our Products</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill px-3 mb-3">₱50 per piece / ₱195 for 4 pcs</div>
+                            <h3 class="mb-3">Cinnamon Roll</h3>
+                            <span>Pastries</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Product1.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <h4>₱ 300</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3"> ₱70 per piece / ₱280 per box (4pcs)</div>
+                            <h3 class="mb-3">Chocolate Chip Muffin</h3>
+                            <span>Muffins</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Product2.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">₱80 per piece / ₱320 per box (4pcs)</div>
+                            <h4 class="mb-3">Blueberry Muffin</h4>
+                            <span>Muffins</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Product3.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">₱40 per piece / ₱240 per box (6pcs)</div>
+                            <h4 class="mb-3">Chocolate Chip</h4>
+                            <span>Cookies</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Product4.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">₱40 per piece / ₱240 per box (6pcs)</div>
+                            <h4 class="mb-3">Chocolate Cookie</h4>
+                            <span>Cookies</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Product5.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">₱180</div>
+                            <h4 class="mb-3">Plain</h4>
+                            <span>Banana Bread</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/Product6.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <!-- Product End -->
 
-    </section>
-<!--========== NEWSLETTER SECTION ========-->
 
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign up for Newsletter</h4>
-            <p>Get E-mail updates about our latest shop and <span> Special Offers.</span>
-            </p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="E-mail Address">
-            <button class="normal">Sign Up</button>
-        </div>
-    </section>
-<!--========== FOOTER ============-->
-
-    <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="./assets/images/favicon.png" alt="" width="240" height="55">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong> 1191 Pablo Ocampo Sr. Ext.,<br>Makati City, Metro Manila</p>
-            <p><strong>Phone:</strong> 0992 448 6530</p>
-            <div class="follow">
-                <h4>Follow us</h4>
-                <div class="icon">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <i class="fa-brands fa-telegram"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-google"></i>
+<!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Contact Details</h4>
+                    <p class="mb-2"><i class="fa fa-userme-3"></i>Anna Nicole</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0966 185 5858</p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="#">Home</a>
+                    <a class="btn btn-link" href="about.html">About</a>
+                    <a class="btn btn-link" href="products.html">Products</a>
+                    <a class="btn btn-link" href="testimonial.html">Testimonials</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">About Us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">Help</a>
-        </div>
-        <div class="col install">
-            <h4>Secured Payment Gateways</h4>
-            <img src="./assets/images/pay/pay.png"alt="">
-        </div>
+    </div>
+    <!-- Footer End -->
 
-        <div class="copyright">
-            <p>© 2025, Rodriguez</p>
-        </div>
-    </footer>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-<!--======= Script for Spotlight Photo ==========-->
 
-    <script>
-        var mainImg = document.getElementById("mainImg");
-        var smallImg = document.getElementsByClassName("smallImg");
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        smallImg[0].onclick = function() {
-            mainImg.src = smallImg[0].src;
-        }
-        smallImg[1].onclick = function() {
-            mainImg.src = smallImg[1].src;
-        }
-        smallImg[2].onclick = function() {
-            mainImg.src = smallImg[2].src;
-        }
-        smallImg[3].onclick = function() {
-            mainImg.src = smallImg[3].src;
-        }
-    </script>
-    
-<!--======== MAIN JS ===============-->
-
-    <script src="script.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
